@@ -1,5 +1,5 @@
 var assert = require('assert');
-pwf = require('../node_modules/pwf-comm/node_modules/pwf-config/node_modules/pwf.js');
+pwf = require('pwf.js');
 $ = require('../node_modules/pwf-jquery-compat/node_modules/jquery');
 require('pwf-jquery-compat');
 require('../node_modules/pwf-comm/node_modules/pwf-config');
