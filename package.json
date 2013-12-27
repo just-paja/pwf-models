@@ -1,0 +1,20 @@
+{
+	"name":"pwf-models",
+	"version":"1.0.0",
+	"description":"Lightweight frontend ORM-like models for pwf",
+	"author":"just-paja <just-paja@gmail.com>",
+	"license":"GPLv3",
+	"main":"./lib/model.js",
+	"dependencies":{
+		"pwf-jquery-compat":"*",
+		"pwf-comm":"*"
+	},
+	"license":"GPLv3",
+	"scripts":{
+		"test":"echo Running tests... && mocha --globals testRule"
+	},
+	"repository":{
+		"type":"git",
+		"url":"https://github.com/just-paja/pwf-models.git"
+	}
+}

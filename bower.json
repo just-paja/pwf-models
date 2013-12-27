@@ -1,0 +1,15 @@
+{
+	"name":"pwf-models",
+	"main":"lib/model.js",
+	"ignore":[
+		"test",
+		"LICENSE",
+		"README.md",
+		".gitignore",
+		"node_modules"
+	],
+	"dependencies":{
+		"pwf-jquery-compat":"*",
+		"pwf-comm":"*"
+	}
+}
