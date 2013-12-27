@@ -9,6 +9,9 @@
 		"pwf-jquery-compat":"*",
 		"pwf-comm":"*"
 	},
+	"devDependencies":{
+		"pwf.js":"*"
+	},
 	"license":"GPLv3",
 	"scripts":{
 		"test":"echo Running tests... && mocha --globals testRule"
