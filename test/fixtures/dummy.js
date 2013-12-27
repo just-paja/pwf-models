@@ -1,0 +1,24 @@
+module.exports = {
+	'attrs':[
+		{
+			'name':'name',
+			'type':'string'
+		},
+		{
+			'name':'email',
+			'type':'string'
+		},
+		{
+			'name':'int',
+			'type':'int'
+		},
+		{
+			'name':'float',
+			'type':'float'
+		},
+		{
+			'name':'list',
+			'type':'list'
+		}
+	]
+};
