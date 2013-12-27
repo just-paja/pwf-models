@@ -50,7 +50,4 @@ describe('model', function() {
 		assert.doesNotThrow(function() { obj.set('list', 'b'); });
 		assert.deepEqual(obj.get('list'), ['b']);
 	});
-
-
-
 });
