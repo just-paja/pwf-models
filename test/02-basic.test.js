@@ -2,7 +2,6 @@ var
 	assert = require('assert'),
 	dummy  = require('./fixtures/dummy');
 
-pwf = require('pwf.js');
 
 describe('model', function() {
 	before(function(done) { pwf.wi(['model', 'list'], done); });

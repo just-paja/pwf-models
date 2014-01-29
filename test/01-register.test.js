@@ -1,6 +1,4 @@
 var assert = require('assert');
-pwf = require('pwf.js');
-
 
 describe('sanity', function() {
 	before(function(done) { pwf.wi(['model', 'list'], done); });

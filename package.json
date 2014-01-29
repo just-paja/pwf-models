@@ -4,7 +4,7 @@
 	"description":"Lightweight frontend ORM-like models for pwf",
 	"author":"just-paja <just-paja@gmail.com>",
 	"license":"GPLv3",
-	"main":"./lib/model.js",
+	"main":"./lib/include.js",
 	"dependencies":{
 		"pwf-jquery-compat":"*",
 		"pwf-comm":"*"
