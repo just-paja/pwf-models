@@ -7,7 +7,7 @@
 	"main":"./lib/include.js",
 	"dependencies":{
 		"pwf-jquery-compat":"*",
-		"pwf-comm":"*"
+		"pwf-comm":">=1.2"
 	},
 	"devDependencies":{
 		"pwf.js":"*"
