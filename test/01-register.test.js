@@ -1,7 +1,7 @@
 var assert = require('assert');
 
 describe('sanity', function() {
-	before(function(done) { pwf.wi(['model', 'list'], done); });
+	before(function(done) { pwf.wi(['model'], done); });
 
 	it('tests if model register method works well', function() {
 		pwf.model.register('dummy-test', {});

@@ -4,7 +4,7 @@ var
 
 
 describe('model', function() {
-	before(function(done) { pwf.wi(['model', 'list'], done); });
+	before(function(done) { pwf.wi(['model'], done); });
 
 	it('tests if model object can be created', function() {
 		pwf.model.register('dummy', dummy);
