@@ -10,6 +10,7 @@
 	],
 	"dependencies":{
 		"pwf-jquery-compat":"*",
-		"pwf-comm":"*"
+		"pwf-comm":"*",
+		"pwf.js":">=1.2.7"
 	}
 }
