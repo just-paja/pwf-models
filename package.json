@@ -19,7 +19,7 @@
 		"url":"https://github.com/just-paja/pwf-models.git"
 	},
 
-	"files":[
+	"include":[
 		"lib/list",
 		"lib/model"
 	]
