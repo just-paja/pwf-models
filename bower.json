@@ -1,6 +1,5 @@
 {
 	"name":"pwf-models",
-	"main":"lib/model.js",
 	"ignore":[
 		"test",
 		"LICENSE",
