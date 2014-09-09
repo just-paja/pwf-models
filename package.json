@@ -1,6 +1,6 @@
 {
 	"name":"pwf-models",
-	"version":"0.5.0-rc7",
+	"version":"0.5.0",
 	"description":"Lightweight frontend ORM-like models for pwf",
 	"author":"just-paja <just-paja@gmail.com>",
 	"license":"GPLv3",
