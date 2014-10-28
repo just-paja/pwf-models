@@ -9,7 +9,9 @@
 	],
 	"dependencies":{
 		"pwf-jquery-compat":"*",
+		"pwf-moment-compat":"*",
 		"pwf-comm":"*",
+		"pwf-config":">=1.2",
 		"pwf.js":">=1.2.7"
 	}
 }

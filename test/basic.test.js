@@ -2,15 +2,24 @@ var
 	assert = require('assert'),
 	dummy  = require('./fixtures/dummy');
 
+pwf = require('pwf.js');
 
 describe('model', function() {
-	before(function(done) { pwf.wi(['model'], done); });
+	var name = 'model.dummy';
+
+	before(require('./utils/create_env'));
 
 	it('tests if model object can be created', function() {
-		pwf.model.register('dummy', dummy);
+		var model;
+
+		pwf.rc(name, dummy);
+
+		model = pwf.get_class(name);
+
+		assert.equal(model.has_attr('id'), true);
 
 		assert.doesNotThrow(function() {
-			pwf.model.create('dummy', {
+			obj = pwf.create(name, {
 				'id':1,
 				'name':'test-name',
 				'email':'email',
@@ -23,15 +32,13 @@ describe('model', function() {
 	it('tests if model object getting', function() {
 		var obj;
 
-		assert.notEqual(pwf.model.get('dummy'), null, 'Dummy model should be registered! Tests are not running in serial.');
-
-		obj = pwf.model.find_existing('dummy', 1);
-		assert.notEqual(obj, null, 'First dummy object should already exist from previous test.');
+		assert.notEqual(pwf.get_class(name), null);
+		assert.notEqual(pwf.get_class(name).find_existing(1), null);
 	});
 
 
 	it('tests if attribute validation', function() {
-		var obj = pwf.model.find_existing('dummy', 1);
+		var obj = pwf.get_class(name).find_existing(1);
 
 		assert.strictEqual(obj.get('name'), 'test-name');
 		assert.strictEqual(obj.get('email'), 'email');

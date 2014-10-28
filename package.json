@@ -7,9 +7,16 @@
 	"main":"./lib/include.js",
 	"dependencies":{
 		"pwf-jquery-compat":"*",
+		"pwf-moment-compat":"*",
 		"pwf-comm":">=1.2",
+		"pwf-config":">=1.2",
 		"pwf.js":">=1.2.7"
 	},
+
+	"devDependencies":{
+		"jsdom":"*"
+	},
+
 	"license":"GPLv3",
 	"scripts":{
 		"test":"echo Running tests... && mocha --globals testRule"
