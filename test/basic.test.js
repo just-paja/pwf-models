@@ -53,7 +53,7 @@ describe('model', function() {
 		assert.doesNotThrow(function() { obj.set('float', '-50.505'); });
 		assert.strictEqual(obj.get('float'), -50.505);
 
-		assert.doesNotThrow(function() { obj.set('list', 'b'); });
+		assert.doesNotThrow(function() { obj.set('list', ['b']); });
 		assert.deepEqual(obj.get('list'), ['b']);
 	});
 });

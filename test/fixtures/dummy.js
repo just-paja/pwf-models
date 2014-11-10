@@ -3,6 +3,10 @@ module.exports = {
 	'static':{
 		'attrs':[
 			{
+				'name':'id',
+				'type':'int'
+			},
+			{
 				'name':'name',
 				'type':'string'
 			},
