@@ -6,11 +6,11 @@
 	"license":"GPLv3",
 	"main":"./lib/include.js",
 	"dependencies":{
-		"pwf-jquery-compat":"*",
-		"pwf-moment-compat":"*",
-		"pwf-comm":"~1.4",
-		"pwf-config":"~1.3",
-		"pwf.js":"~1.7"
+		"pwf-jquery-compat":"^0.5",
+		"pwf-moment-compat":"^1.1",
+		"pwf-comm":"^1.4",
+		"pwf-config":"^1.3",
+		"pwf.js":"^1.7"
 	},
 
 	"devDependencies":{
