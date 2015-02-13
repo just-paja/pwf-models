@@ -27,6 +27,7 @@
 	},
 
 	"include":[
+		"lib/helper",
 		"lib/list",
 		"lib/model"
 	]
