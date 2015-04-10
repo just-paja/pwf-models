@@ -14,7 +14,8 @@
 	},
 
 	"devDependencies":{
-		"jsdom":"^1.5"
+		"jsdom":"^1.5",
+		"mocha":"^2.1"
 	},
 
 	"license":"GPLv3",
