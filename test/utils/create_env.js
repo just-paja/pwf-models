@@ -19,6 +19,11 @@ module.exports = function(next) {
 
 		global.document = pwf.document;
 		global.window = pwf.window;
+		global.sys = {
+			'debug':{
+				'frontend':true
+			}
+		};
 
 		require('../../lib/include');
 

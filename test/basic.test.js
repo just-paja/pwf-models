@@ -22,7 +22,7 @@ describe('model', function() {
 			obj = pwf.create(name, {
 				'id':1,
 				'name':'test-name',
-				'email':'email',
+				'email':'email@google.com',
 				'int':'50'
 			});
 		}, 'Very primitive creation of dummy. Should be without problem');
@@ -34,26 +34,5 @@ describe('model', function() {
 
 		assert.notEqual(pwf.get_class(name), null);
 		assert.notEqual(pwf.get_class(name).find_existing(1), null);
-	});
-
-
-	it('tests if attribute validation', function() {
-		var obj = pwf.get_class(name).find_existing(1);
-
-		assert.strictEqual(obj.get('name'), 'test-name');
-		assert.strictEqual(obj.get('email'), 'email');
-		assert.strictEqual(obj.get('int'), 50);
-
-		assert.throws(function() { obj.set('int', 'asdf'); });
-
-		assert.doesNotThrow(function() { obj.set('int', '50'); });
-		assert.doesNotThrow(function() { obj.set('int', '+50'); });
-		assert.doesNotThrow(function() { obj.set('int', '-50'); });
-
-		assert.doesNotThrow(function() { obj.set('float', '-50.505'); });
-		assert.strictEqual(obj.get('float'), -50.505);
-
-		assert.doesNotThrow(function() { obj.set('list', ['b']); });
-		assert.deepEqual(obj.get('list'), ['b']);
 	});
 });

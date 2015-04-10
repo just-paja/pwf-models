@@ -12,7 +12,7 @@ module.exports = {
 			},
 			{
 				'name':'email',
-				'type':'string'
+				'type':'email'
 			},
 			{
 				'name':'int',
