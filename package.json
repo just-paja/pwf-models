@@ -10,7 +10,7 @@
 		"pwf-moment-compat":"^1.1",
 		"pwf-comm":"^1.4",
 		"pwf-config":"^1.3",
-		"pwf.js":"^1.7"
+		"pwf.js":"^1.8"
 	},
 
 	"devDependencies":{
