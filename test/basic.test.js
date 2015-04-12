@@ -12,7 +12,7 @@ describe('model', function() {
 	it('tests if model object can be created', function() {
 		var model;
 
-		pwf.rc(name, dummy);
+		pwf.reg_class(name, dummy);
 
 		model = pwf.get_class(name);
 

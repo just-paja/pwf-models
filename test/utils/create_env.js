@@ -38,5 +38,5 @@ module.exports = function(next) {
 		delete global.window;
 	}
 
-	return pwf.wcr(['model', 'model.list'], next);
+	return pwf.wait_for('class', ['model', 'model.list'], next);
 };
