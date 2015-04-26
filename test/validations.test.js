@@ -3,7 +3,7 @@ var
 	dummy  = require('./fixtures/dummy');
 
 
-describe('model', function() {
+describe('validations', function() {
 	var name = 'model.dummy.validations';
 
 	before(require('./utils/create_env'));
@@ -146,6 +146,8 @@ describe('model', function() {
 
 
 	it('float', function() {
+		var obj = pwf.get_class(name).find_existing(1);
+
 		obj.set('float', '-5');
 		assert.strictEqual(obj.get('float'), -5);
 
