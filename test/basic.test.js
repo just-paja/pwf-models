@@ -80,6 +80,8 @@ describe('instance methods', function() {
 			obj.update(name, 1);
 		});
 
-		obj.update(name, null);
+		assert.throws(function() {
+			obj.update(name, null);
+		});
 	});
 });
