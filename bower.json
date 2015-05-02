@@ -1,5 +1,6 @@
 {
 	"name":"pwf-models",
+	"license":"GPL-3.0",
 	"ignore":[
 		"test",
 		"LICENSE",
